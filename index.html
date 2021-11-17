@@ -25,10 +25,10 @@
 
 <section>
 	<div class="flex">
-			<h2>우주를 정복하러 갑니다</h2>
+			<h2 class="input">펜을 눌러보세요!</h2>
 			<img src='1.png' style=" margin: auto; width: 55%; left: 0px; top:60px;">
 
-			<img src='2.png' class="item" style=" width: 17%; right:230px; bottom:80px;">
+			<img src='2.png' class="item button" style=" width: 17%; right:230px; bottom:80px;">
 			
 			<a href="https://serena0412.github.io/21.11.17.main/" target_self>
 			<img src='back.png' class="item" style=" width: 15%; left: 0px;bottom:40px;z-index: 0;">
@@ -37,5 +37,52 @@
 
 </section>
 
+
+
+
+
+<script type="text/javascript">
+	
+var txtArray = ['아플 거라서', '미용실 갈 거라서', '낚시 갈 거라서', '늦잠 잘 거라서', '기분이 안 좋을 거라서', '피곤할 거라서', 
+		 '꿈꿀 거라서', '캠핑 갈 거라서', '콘서트 갈 거라서', '여행 갈 거라서', '하늘을 날 거라서', '비가 올 거라서', 
+		 '우주를 정복할 거라서','돈이 없을 거라서', '쉬기를 원할 거라서', '평화를 원할 거라서', '이벤트에 당첨될 거라서', 
+		 '그냥 가기 싫을 거라서', '기쁠 거라서', '싸울 거라서'];
+
+
+
+
+var input = document.querySelector(".input");
+var btn = document.querySelector(".button");
+
+
+
+btn.addEventListener("click", action);
+
+function action(){
+  input.textContent = 
+  `오늘은
+  ${txtArray[Math.floor(Math.random()*txtArray.length)]}
+  안 갈 거예요`;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
